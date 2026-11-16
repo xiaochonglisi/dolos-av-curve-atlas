@@ -1,22 +1,19 @@
 # DOLOS 全时序 AU—音频曲线图集
 
-无真假标签。信息点只是观察入口，默认不画在曲线上。
+无真假标签。信息点只是观察入口。
 
-## 下载
+## 轻量分析包（推荐克隆后直接用）
 
-仓库本身只有说明。完整图集（含 wav，约 1.1 GB）在 **Releases** 里：
+仓库里的 **`dolos_curve_lite.zip`**（约 1.6 MB）：
 
-`DOLOS_AU_audio_curve_atlas.zip`
+- 72 个观察样本的逐帧 AU04/07/12/14、log-RMS、F0、真实 clip 时间戳
+- 各样本的 IIU、信息点、候选事件时间
+- 曲线 `curve.svg` / `curve.png`
+- 匿名 ID（S01… / P01…）与有效覆盖标记
+- **不含 WAV、不含原始 clip 名、不含真假标签**
 
-## 打开
+解压后看 `dolos_curve_lite/README.md` 和 `index.csv`。
 
-1. 解压整个文件夹。
-2. 双击 `打开.bat`（需要本机 Python 3）。
-3. 浏览器打开 http://127.0.0.1:8766/index.html
+## 完整图集（含原始音频）
 
-- `index.html`：72 条观察集  
-- `all.html`：全量 1479 clip  
-- `persons.html`：按人物  
-- `events.html`：候选变化事件（≠ 欺骗点 / ≠ 信息点）
-
-请只在组内使用，不要公开传播原始语音。
+[Release v1.0](https://github.com/xiaochonglisi/dolos-av-curve-atlas/releases/tag/v1.0) 的 `DOLOS_AU_audio_curve_atlas.zip`（约 1.1 GB）。解压后双击 `打开.bat`。
